@@ -18,6 +18,8 @@
 #include "Components/Movement.hpp"
 #include "Components/Display.hpp"
 #include "Components/Flags.hpp"
+#include "Components\Animated.h"
+#include "Components\Texture.h"
 
 class PlayerFactory
 {

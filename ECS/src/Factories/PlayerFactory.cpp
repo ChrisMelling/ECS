@@ -19,6 +19,9 @@ void PlayerFactory::createPlayer(sf::Vector2f argPos)
 
     sf::Texture* t = m_ResMan.texture("Player");
 
+	ent.comp<Texture>()->SetTexture(*t);
+
+
     ent.comp<Display>()->sprite.setTexture(*t);
     ent.comp<Display>()->sprite.setPosition(argPos);
     ent.comp<Display>()->sprite.setOrigin(ent.comp<Display>()->sprite.getTexture()->getSize().x / 2, ent.comp<Display>()->sprite.getTexture()->getSize().y / 2);

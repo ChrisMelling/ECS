@@ -21,6 +21,7 @@
 #include "Components/Display.hpp"
 #include "Components/Movement.hpp"
 #include "Components/Flags.hpp"
+#include "Components\Animated.h"
 
 class RenderSystem
 {

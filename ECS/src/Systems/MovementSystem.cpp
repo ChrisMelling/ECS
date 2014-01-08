@@ -13,9 +13,10 @@ void MovementSystem::Update(float deltaTime)
 
     for (size_t i = 0; i < m_Ents.size(); ++i)
     {
-        Display* disp = m_Ents[i]->comp<Display>().get();
+
+		Display* display = m_Ents[i]->comp<Display>().get();
         Movement* mov = m_Ents[i]->comp<Movement>().get();
 
-        disp->sprite.move(mov->velocity.x * deltaTime, mov->velocity.y * deltaTime);
+		display->sprite.move(mov->velocity.x * deltaTime, mov->velocity.y * deltaTime);
     }
 }

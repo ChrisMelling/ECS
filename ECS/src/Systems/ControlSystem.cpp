@@ -45,6 +45,8 @@ void ControlSystem::Update(float deltaTime)
             {
                 disp->sprite.rotate(mov->acceleration * deltaTime);
             }
+
+			
         }
     }
 }
